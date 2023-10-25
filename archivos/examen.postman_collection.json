@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "dbb60b32-f0af-4bde-9871-cd2d378e697f",
+		"name": "examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "generaToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"card_number\":378282246310005,\r\n    \"cvv\":123,\r\n    \"expiration_month\":\"12\",\r\n    \"expiration_year\":\"2023\",\r\n    \"email\":\"prueba@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/token",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/comercio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/comercio",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comercio"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
